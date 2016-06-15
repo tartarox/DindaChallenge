@@ -14,6 +14,12 @@
 		E5A7A80D1D10CCE900467BA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5A7A80B1D10CCE900467BA6 /* LaunchScreen.storyboard */; };
 		E5A7A8181D10CCE900467BA6 /* DindaSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A7A8171D10CCE900467BA6 /* DindaSwiftTests.swift */; };
 		E5A7A8231D10CCE900467BA6 /* DindaSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A7A8221D10CCE900467BA6 /* DindaSwiftUITests.swift */; };
+		E5A7A8331D10D19A00467BA6 /* contas.csv in Resources */ = {isa = PBXBuildFile; fileRef = E5A7A8311D10D19A00467BA6 /* contas.csv */; };
+		E5A7A8341D10D19A00467BA6 /* transacoes.csv in Resources */ = {isa = PBXBuildFile; fileRef = E5A7A8321D10D19A00467BA6 /* transacoes.csv */; };
+		E5A7A83B1D10D2C300467BA6 /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A7A83A1D10D2C300467BA6 /* FileManager.swift */; };
+		E5A7A83D1D10DACC00467BA6 /* AccountObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A7A83C1D10DACC00467BA6 /* AccountObject.swift */; };
+		E5A7A83F1D10DAF000467BA6 /* TransactionObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A7A83E1D10DAF000467BA6 /* TransactionObject.swift */; };
+		E5A7A8411D10E35300467BA6 /* TransactionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A7A8401D10E35300467BA6 /* TransactionManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +53,12 @@
 		E5A7A81E1D10CCE900467BA6 /* DindaSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DindaSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5A7A8221D10CCE900467BA6 /* DindaSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DindaSwiftUITests.swift; sourceTree = "<group>"; };
 		E5A7A8241D10CCE900467BA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5A7A8311D10D19A00467BA6 /* contas.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = contas.csv; sourceTree = "<group>"; };
+		E5A7A8321D10D19A00467BA6 /* transacoes.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = transacoes.csv; sourceTree = "<group>"; };
+		E5A7A83A1D10D2C300467BA6 /* FileManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileManager.swift; sourceTree = "<group>"; };
+		E5A7A83C1D10DACC00467BA6 /* AccountObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountObject.swift; sourceTree = "<group>"; };
+		E5A7A83E1D10DAF000467BA6 /* TransactionObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionObject.swift; sourceTree = "<group>"; };
+		E5A7A8401D10E35300467BA6 /* TransactionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +109,12 @@
 		E5A7A8011D10CCE900467BA6 /* DindaSwift */ = {
 			isa = PBXGroup;
 			children = (
-				E5A7A8021D10CCE900467BA6 /* AppDelegate.swift */,
-				E5A7A8041D10CCE900467BA6 /* ViewController.swift */,
-				E5A7A8061D10CCE900467BA6 /* Main.storyboard */,
-				E5A7A8091D10CCE900467BA6 /* Assets.xcassets */,
-				E5A7A80B1D10CCE900467BA6 /* LaunchScreen.storyboard */,
-				E5A7A80E1D10CCE900467BA6 /* Info.plist */,
+				E5A7A8371D10D1B700467BA6 /* AppDelegate */,
+				E5A7A8301D10D18D00467BA6 /* CSV Files */,
+				E5A7A8391D10D1E300467BA6 /* Managers */,
+				E5A7A8381D10D1BE00467BA6 /* Misc */,
+				E5A7A8351D10D1A300467BA6 /* Objects */,
+				E5A7A8361D10D1AA00467BA6 /* ViewControllers */,
 			);
 			path = DindaSwift;
 			sourceTree = "<group>";
@@ -123,6 +135,60 @@
 				E5A7A8241D10CCE900467BA6 /* Info.plist */,
 			);
 			path = DindaSwiftUITests;
+			sourceTree = "<group>";
+		};
+		E5A7A8301D10D18D00467BA6 /* CSV Files */ = {
+			isa = PBXGroup;
+			children = (
+				E5A7A8311D10D19A00467BA6 /* contas.csv */,
+				E5A7A8321D10D19A00467BA6 /* transacoes.csv */,
+			);
+			name = "CSV Files";
+			sourceTree = "<group>";
+		};
+		E5A7A8351D10D1A300467BA6 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				E5A7A83C1D10DACC00467BA6 /* AccountObject.swift */,
+				E5A7A83E1D10DAF000467BA6 /* TransactionObject.swift */,
+			);
+			name = Objects;
+			sourceTree = "<group>";
+		};
+		E5A7A8361D10D1AA00467BA6 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E5A7A8041D10CCE900467BA6 /* ViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		E5A7A8371D10D1B700467BA6 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				E5A7A8021D10CCE900467BA6 /* AppDelegate.swift */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		E5A7A8381D10D1BE00467BA6 /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				E5A7A8061D10CCE900467BA6 /* Main.storyboard */,
+				E5A7A8091D10CCE900467BA6 /* Assets.xcassets */,
+				E5A7A80B1D10CCE900467BA6 /* LaunchScreen.storyboard */,
+				E5A7A80E1D10CCE900467BA6 /* Info.plist */,
+			);
+			name = Misc;
+			sourceTree = "<group>";
+		};
+		E5A7A8391D10D1E300467BA6 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				E5A7A83A1D10D2C300467BA6 /* FileManager.swift */,
+				E5A7A8401D10E35300467BA6 /* TransactionManager.swift */,
+			);
+			name = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,6 +295,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5A7A8331D10D19A00467BA6 /* contas.csv in Resources */,
+				E5A7A8341D10D19A00467BA6 /* transacoes.csv in Resources */,
 				E5A7A80D1D10CCE900467BA6 /* LaunchScreen.storyboard in Resources */,
 				E5A7A80A1D10CCE900467BA6 /* Assets.xcassets in Resources */,
 				E5A7A8081D10CCE900467BA6 /* Main.storyboard in Resources */,
@@ -256,7 +324,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5A7A83B1D10D2C300467BA6 /* FileManager.swift in Sources */,
+				E5A7A83F1D10DAF000467BA6 /* TransactionObject.swift in Sources */,
+				E5A7A8411D10E35300467BA6 /* TransactionManager.swift in Sources */,
 				E5A7A8051D10CCE900467BA6 /* ViewController.swift in Sources */,
+				E5A7A83D1D10DACC00467BA6 /* AccountObject.swift in Sources */,
 				E5A7A8031D10CCE900467BA6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

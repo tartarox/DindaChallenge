@@ -33,4 +33,13 @@ class DindaSwiftTests: XCTestCase {
         }
     }
     
+    func testIfTransactionIsEmpty() {
+        let transactionArray = FileManager.getTransitionCsvData()
+        XCTAssert(transactionArray != 0)
+    }
+    
+    func testIfAccountIsEmpty() {
+        let accountArray = FileManager.getAccountCsvData()
+        XCTAssert(accountArray != 0)
+    }
 }
